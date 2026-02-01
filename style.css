@@ -1,117 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap');
-/*css= cascade style sheet: hoja de estilo en cascada
-*/
-/*selectores: normas que el css debe cumplir para darle forma
-y diseño a una etiqueta y a la pagina
-
-1) Selector simple o de etiqueta h1{
-            color:blueviolet;
-            
-        }
-2) selector compuesto p b{
-    color:darkorchid
-}
-3) selector de clase  <div class="selector1">
-        <p>domingo</p>
-    </div>
-4) selector de identificacion
-
- colores en css
-rgb: red green blue
-rgba: red green blue alpha
-hex: hexadecimal
-nombre
-
-Unidades de medida, Absolutas y relativas
-Absolutas: pixeles y porcentajes
-realtivas: centimetos cm   milimetros mm    picas pc   rem   em, dependen de otra unidad de medida
-ancho y alto
-
-modelo de la caja
-margin: margen externo
-padding: margen interno
-border: borde
-
-background: fondo de algo
-image: imagenes
-color: colores
-attachamed: atachar
-
-*/
 body{
-    background: #2A7B9B;
-    background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
-    /*Colores degradados linear y radianes*/
-    background-image: url("./23813-harry-potter.jpg");
-    background-repeat: no-repeat; /*que la imagen no se repita*/
-    /*background-size: contain; /*para ajustar la imagen a la pagina*/
-    background-attachment: fixed; /*para que se quede fija la imagen*/
+    background-image: url("./imagen-actividad.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: fixed;
 }
 
-h1{
-    /*color:blueviolet;*/
-    color: rgb(245, 73, 39)
-}
-h2{
-    color:blanchedalmond
-}
-h3{
-    color:aqua
-}
-h4{
-    color:cornflowerblue
-}
-h5{
-    color:blanchedalmond
+h3, h4{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: deepskyblue;
 }
 
-p b{
-    color:darkorchid
+form{
+    margin-inline: 10px;
 }
-.selector1{
-    background-color: darkslateblue;
-    width: fit-content;/*Ancho*/
-    height: fit-content;/*alto*/
+input[type=text]{
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   background-color: black; 
+   color: white;
 }
-#selector2{
-    background-color:lightskyblue;
-    width: fit-content;/*Ancho*/
-    height: fit-content;/*alto*/
+input[type=number]{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: black; 
+    color: white;
 }
-.div1{
-    /*background-color: rgb(222, 46, 11);*/
-    background-image: url("./23801-harry-potter.jpg");
-    background-size: contain;
-    width: fit-content;/*Ancho*/
-    height: fit-content;/*alto*/
+
+input[type=tel]{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: black; 
+    color: white;
+}
+
+input[type=email]{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: black; 
+    color: white;
+}
+
+input[type=password]{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: black; 
+    color: white;
+}
+
+input:hover[type=submit]{
+    color: white;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+table{
+    margin-left: 20%;
+    border-collapse:collapse;
+    padding: 10;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: white;
+}
+a{
+    color: burlywood;
+    border-radius: 30px;
+    border: 1px black;
+    font-weight: 30px;
+    background-color: black;
     margin: 15px;
-    margin-top: 25px;
-    padding: 60px;
-    border-style:initial;
+    padding: 10px;
 }
-.div2{
-    background-color: #804C42;
-    width: fit-content;/*Ancho*/
-    height: fit-content;/*alto*/
-    margin: 25px;
-    margin-top: 25px;
-    padding: 60px;
-    border-radius: 15px;
+.tituloprincipal{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: aqua;
 }
-.fonts{
-    /*fuentes*/
-    font-size: 125%;
-    font-family: "Bitcount Single", system-ui; /*tipo de letra osea la fuente*/
-    font-weight: 65px; /* ***** de la letra*/
-    font-style: oblique;
-
-}
-.text{
-    
-    text-align: center; /*alineamiento dle texto*/
-    text-decoration: line-through; /*decoraciond e lineas en el texto*/
-    color: aliceblue;
-    text-shadow: 50px 30px red;  /* sombra del texto*/
-    text-transform: uppercase; /*capitalizacion del tecto, donde poner mayuscula....... 
-    uppercase: mayuscula.... lowercase: minuscula... capitalize: primera letra mayuscula*/
+#titulosecundario{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: deepskyblue;
 }
